@@ -31,10 +31,17 @@ Otherwise sooner or later proxy scanners will find your proxy and use it for evi
 You can test that your proxies work by using curl command:
 
     curl --socks4 192.168.1.101:1080 -s whatsmyip.net | grep 'class="ip"' 
+
 will show  192.168.1.101 as your ip
+
     curl --socks4 192.168.1.102:1080 -s whatsmyip.net | grep 'class="ip"' 
+
 will show  192.168.1.102 as your ip
+
     curl --socks4 192.168.1.103:1080 -s whatsmyip.net | grep 'class="ip"' 
+
 will show  192.168.1.103 as your ip
+
     curl --socks4 192.168.1.104:1080 -s whatsmyip.net | grep 'class="ip"' 
+
 will show  192.168.1.104 as your ip
